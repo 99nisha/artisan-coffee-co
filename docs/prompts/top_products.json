@@ -1,0 +1,66 @@
+{
+    "prompts": [
+        {
+            "id": 1,
+            "request": {
+                "tasks": [
+                    "Write a DAX expression that can get the total sales for each products during this month"
+                ],
+                "tools": [
+                    "Power BI",
+                    "DAX"
+                ],
+                "schema": {
+                    "tables": [
+                        {
+                            "name": "Products",
+                            "columns": [
+                                "product_id",
+                                "product_name",
+                                "product_type",
+                                "bean_id",
+                                "roast_profile_id",
+                                "size_weight",
+                                "unit_cost",
+                                "selling_price",
+                                "profit_margin",
+                                "category",
+                                "barcode_sku"
+                            ]
+                        },
+                        {
+                            "name": "Orders",
+                            "columns": [
+                                "order_id",
+                                "customer_id",
+                                "order_date",
+                                "order_time",
+                                "order_type",
+                                "payment_method",
+                                "subtotal",
+                                "tax_amount",
+                                "tip_amount",
+                                "total_amount",
+                                "employee_id",
+                                "order_status"
+                            ]
+                        },
+                        {
+                            "name": "Order Items",
+                            "columns": [
+                                "order_item_id",
+                                "order_id",
+                                "product_id",
+                                "quantity",
+                                "unit_price",
+                                "total_price",
+                                "customizations"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "response": {}
+        }
+    ]
+}
